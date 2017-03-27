@@ -54,14 +54,14 @@ public class StringCalculatorTest {
     public final void whenEmptyStringIsUsedThenReturnValueIs0() {
         assertEquals(0, StringCalculator.add(""));
     }
-//
-//    @Test
-//    public final void whenOneNumberIsUsedThenReturnValueIsThatSameNumber() {
-//        assertEquals(3, StringCalculator.add("3"));
-//    }
-//    
-//    @Test
-//    public final void whenTwoNumbersAreUsedThenReturnValueIsTheirSum() {
-//        assertEquals(3+6, StringCalculator.add("3,6"));
-//    }
+
+    @Test
+    public final void whenOneNumberIsUsedThenReturnValueIsThatSameNumber() {
+        assertEquals(3, StringCalculator.add("3"));
+    }
+    
+    @Test
+    public final void whenTwoNumbersAreUsedThenReturnValueIsTheirSum() {
+        assertEquals(3+6, StringCalculator.add("3,6"));
+    }
 }
