@@ -15,9 +15,10 @@ public class StringCalculator {
         int returnValue = 0;
         String[] numbersArray = numbers.split(",");
 
-        if (numbersArray.length > 2) {
-            throw new RuntimeException("Up to 2 numbers separated by comma (,) are allowed.");
-        }
+        // Req #1 superseded by req #4
+        //if (numbersArray.length > 2) {
+        //    throw new RuntimeException("Up to 2 numbers separated by comma (,) are allowed.");
+        //}
         
         for (String number : numbersArray) {
             if (!number.trim().isEmpty()) {
